@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Terminal</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .terminal { background: #000; color: #fff; padding: 20px; width: 80%; margin: 50px auto; }
+        .input-line { display: flex; }
+        .input-line span { margin-right: 10px; }
+        .input-line input { flex: 1; background: #333; border: none; color: #fff; padding: 5px; }
+        .output { white-space: pre-wrap; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="output" id="output"></div>
+        <div class="input-line">
+            <span>>></span>
+            <input type="text" id="commandInput" onkeypress="handleKeyPress(event)">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
